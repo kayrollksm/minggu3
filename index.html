@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Borang</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <form method="post" action="submit.html">
+        <div>
+            <label for="nama">Nama: </label>
+            <input type="text" id="nama" 
+            name="nama">
+        </div>
+        <div>
+            <label for="umur">Umur: </label>
+            <input type="number" id="umur" 
+            name="umur">
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" id="password" 
+            name="password">
+        </div>
+        <div>
+            <label for="setuju">Setuju Untuk Berjaya: </label>
+            <input type="checkbox" id="setuju" 
+            name="setuju">
+        </div>
+        
+        <button type="submit">Hantar</button>
+    </form>
 </body>
 </html>

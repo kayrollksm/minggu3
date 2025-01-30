@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+form label {
+    width: 10ch;
+}
