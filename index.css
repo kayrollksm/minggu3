@@ -4,14 +4,25 @@
 form {
     display: flex;
     flex-direction: column;
+    gap: 16px;
+    padding: 16px;
 }
 
-form > div {
+form > div > fieldset {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    padding: 0px;
+    margin: 0px;
+    border: none;
 }
 
 form label {
     width: 10ch;
+}
+
+input {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: ; 
 }
