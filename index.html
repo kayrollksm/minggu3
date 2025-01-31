@@ -9,9 +9,9 @@
 <body>
     <form method="post" action="submit.html">
         <div>
-            <label for="nama">Nama: </label>
-            <input type="text" id="nama" 
-            name="nama">
+            <label for="nama-penuh">Nama Penuh: </label>
+            <input type="text" id="nama-penuh" 
+            name="nama-penuh">
         </div>
         <div>
             <label for="umur">Umur: </label>
@@ -39,9 +39,23 @@
               <label for="os-mac">Mac</label>
             </div>
           </fieldset>
-          
+
           <button type="submit">Submit</button>
         </form>
     </form>
+
+    <script>
+        document.addEventListener('submit', (event) => {
+          event.preventDefault();
+          const form = event.target;
+          const formData = new FormData(form);
+          const data = {};
+          for (const [key, value] of formData.entries()) {
+            data[key] = value;
+          }
+          console.log(data);
+        });
+      </script>
+
 </body>
 </html>
